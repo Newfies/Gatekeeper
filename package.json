@@ -2,9 +2,9 @@
   "name": "newfiesgatekeeper",
   "version": "1.0.0",
   "description": "Gatekeeper is the evolution of Disboot.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Newfies/Gatekeeper/issues"
   },
-  "homepage": "https://github.com/Newfies/Gatekeeper#readme"
+  "homepage": "https://github.com/Newfies/Gatekeeper#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1",
+    "ini": "^5.0.0"
+  }
 }
