@@ -1,0 +1,27 @@
+{
+  "name": "newfiesgatekeeper",
+  "version": "1.0.0",
+  "description": "Gatekeeper is the evolution of Disboot.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newfies/Gatekeeper.git"
+  },
+  "keywords": [
+    "Discord",
+    "Bot",
+    "Ban",
+    "Bot",
+    "Utility",
+    "Bot"
+  ],
+  "author": "Newfies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Newfies/Gatekeeper/issues"
+  },
+  "homepage": "https://github.com/Newfies/Gatekeeper#readme"
+}
