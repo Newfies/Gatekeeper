@@ -64,9 +64,9 @@ Gatekeeper/
 |           ├── configs.json
 │           └── bans.json
 ├── bot.js
-├── LICENSE
 ├── package.json
 ├── .env
+├── LICENSE
 └── README.md
 ```
 
