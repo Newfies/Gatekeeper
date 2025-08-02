@@ -17,7 +17,9 @@ Gatekeeper allows server owners to efficiently **ban problematic users** and **s
 - This is another learning project of mine, I don't want to use ChatGPT for this however I always seem to end up using it either way and then I loose all desire to work on it.
 - If you are reading this and your not me, Hey! what are you doing here..? This probably won't go anywhere, so unless you wanna try to help I don't see a reason for you to be here, this isn't exactly a good place to learn from, but its open source so.. knock yourself out I guess.
 - If you are curious on my other projects that kinda went nowhere I suggest you look at any of the following.
-  - [Disboot](https://github.com/Newfies/Disboot) [**OPEN SOURCE DISCORD BOT**]
+  - [**Disboot**](https://github.com/Newfies/Disboot) [**OPEN SOURCE DISCORD BOT**]
+  - [**DWT**](https://github.com/GsLibrary/dwt) [**OPEN SOURCE NODEJS TEMPLATE I USED OFTEN**]
+  - [**NewfiesJS**](https://newfies.github.io/module/) [**OPEN SOURCE NPM PACKAGE**] Ended up being a logging system. I wanted to turn it into a library for easy access to all the things I use.. But I can't add much when I can't code for shit
 
 ---
 
