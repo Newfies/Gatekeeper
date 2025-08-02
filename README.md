@@ -13,7 +13,7 @@ This will ultimately allow ban categories than can instantly be added to any ser
 - To make a /ban command
 
 ## Command List
-- /export - Exports the bans into a importable code for sharing
+- `` /export `` - Exports the bans into a importable code for sharing
 - /import < code > - Import a ban list that was made from a export command
 - /ban < user > < reason > - Bans a user and adds them to your servers ban list
 
