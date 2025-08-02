@@ -75,4 +75,4 @@ Feel free to open issues, suggest features, or contribute via Pull Requests!
 ---
 
 ## 💬 Credits
-Built by **Newfies** as a successor to **Disboot**.
+Built by **Newfies** with the help of **ChatGPT** as a successor to **Disboot**.
