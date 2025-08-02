@@ -1,8 +1,8 @@
-# Gatekeeper
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/Newfies/Gatekeeper/refs/heads/main/res/Logo2.png" alt="Gatekeeper">
 </p>
+
+# Gatekeeper
 
 **Gatekeeper** is the evolution of Disboot — a Discord bot designed to make **ban management across multiple servers simple and collaborative**.
 
