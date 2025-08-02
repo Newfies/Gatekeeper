@@ -35,7 +35,7 @@ Gatekeeper allows server owners to efficiently **ban problematic users** and **s
 ---
 
 ## 📂 Folder Structure (Planned)
-``
+```plaintext
 Gatekeeper/
 ├── Commands/
 │   ├── Ban.js
@@ -53,7 +53,7 @@ Gatekeeper/
 ├── package.json
 ├── .env
 └── README.md
-``
+```
 
 ---
 
