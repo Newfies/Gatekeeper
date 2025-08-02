@@ -35,40 +35,25 @@ Gatekeeper allows server owners to efficiently **ban problematic users** and **s
 ---
 
 ## 📂 Folder Structure (Planned)
+``
 Gatekeeper/
-
 ├── Commands/
-
 │   ├── Ban.js
-
 │   ├── Export.js
-
 │   ├── Import.js
-
 │   └── Ping.js
-
 ├── Utils/
-
 │   └── Logger.js
-
 ├── Data/
-
 │   └── Servers/
-
 │       └── [SERVER IDENTIFIER]/
-
 │           └── Bans.json
-
 ├── bot.js
-
 ├── LICENSE
-
 ├── package.json
-
 ├── .env
-
 └── README.md
-
+``
 
 ---
 
