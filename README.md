@@ -35,3 +35,44 @@ Gatekeeper allows server owners to efficiently **ban problematic users** and **s
 ---
 
 ## 📂 Folder Structure (Planned)
+Gatekeeper/
+├── Commands/
+│   ├── Ban.js
+│   ├── Export.js
+│   ├── Import.js
+│   └── Ping.js
+├── Utils/
+│   └── Logger.js
+├── Data/
+│   └── Servers/
+│       └── [SERVER IDENTIFIER]/
+│           └── Bans.json
+├── bot.js
+├── LICENSE
+├── package.json
+├── .env
+└── README.md
+
+
+---
+
+## 📌 Future Plans
+- Add **ban categories** (e.g., spammers, raiders, scam bots).
+- Allow **global ban codes** trusted by multiple servers.
+- Build a **web dashboard** for easier ban list management.
+- Optional: Implement **appeal system** for banned users.
+
+---
+
+## 📜 License
+MIT License — Free to use, modify, and contribute.
+
+---
+
+## 🤝 Contributions
+Feel free to open issues, suggest features, or contribute via Pull Requests!
+
+---
+
+## 💬 Credits
+Built by **Newfies** as a successor to **Disboot**.
