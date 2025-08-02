@@ -47,6 +47,7 @@ Gatekeeper/
 ├── Data/
 │   └── Servers/
 │       └── [SERVER IDENTIFIER]/
+|           ├── Config.json
 │           └── Bans.json
 ├── bot.js
 ├── LICENSE
