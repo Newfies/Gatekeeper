@@ -51,18 +51,18 @@ Gatekeeper allows server owners to efficiently **ban problematic users** and **s
 ## 📂 Folder Structure
 ```plaintext
 Gatekeeper/
-├── Commands/
-│   ├── Ban.js
-│   ├── Export.js
-│   ├── Import.js
-│   └── Ping.js
-├── Utils/
-│   └── Logger.js
-├── Data/
-│   └── Servers/
+├── commands/
+│   ├── ban.js
+│   ├── export.js
+│   ├── import.js
+│   └── ping.js
+├── utils/
+│   └── logger.js
+├── data/
+│   └── servers/
 │       └── [SERVER IDENTIFIER]/
-|           ├── Config.json
-│           └── Bans.json
+|           ├── configs.json
+│           └── bans.json
 ├── bot.js
 ├── LICENSE
 ├── package.json
