@@ -58,7 +58,7 @@ Gatekeeper/
 ---
 
 ## 📌 Future Plans
-- Add **ban categories** (e.g., spammers, raiders, scam bots).
+- Add **ban categories** (e.g., spammers, raiders, scam bots, **Disboard leachers**).
 - Allow **global ban codes** trusted by multiple servers.
 - Build a **web dashboard** for easier ban list management.
 - Optional: Implement **appeal system** for banned users.
