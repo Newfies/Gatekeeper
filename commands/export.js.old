@@ -1,0 +1,61 @@
+const fs = require('fs');
+const path = require('path');
+const { SlashCommandBuilder, AttachmentBuilder } = require('discord.js');
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('export')
+        .setDescription('Export bans from this server')
+        .addStringOption(option =>
+            option.setName('category')
+                .setDescription('Category to filter bans by')
+                .setRequired(false)
+        ),
+
+    async execute(interaction) {
+        const serverId = interaction.guild.id;
+        const categoryFilter = interaction.options.getString('category');
+
+        const bansFile = path.join(__dirname, '..', 'data', 'servers', serverId, 'bans.json');
+
+        if (!fs.existsSync(bansFile)) {
+            return interaction.reply({ content: 'No bans found for this server.', ephemeral: true });
+        }
+
+        let bans = [];
+        try {
+            const data = fs.readFileSync(bansFile, 'utf-8');
+            bans = JSON.parse(data);
+        } catch (err) {
+            return interaction.reply({ content: 'Failed to read bans data.', ephemeral: true });
+        }
+
+        // Filter by category if provided
+        if (categoryFilter) {
+            bans = bans.filter(ban => ban.category && ban.category.toLowerCase() === categoryFilter.toLowerCase());
+            if (bans.length === 0) {
+                return interaction.reply({ content: `No bans found with category "${categoryFilter}".`, ephemeral: true });
+            }
+        }
+
+        // Prepare export string as JSON string, base64 encoded (to safely transfer)
+        const exportString = Buffer.from(JSON.stringify(bans)).toString('base64');
+
+        if (exportString.length <= 1900) { // Safe buffer for content limit
+            return interaction.reply({
+                content: `Exported bans${categoryFilter ? ` with category "${categoryFilter}"` : ''}:\n\`\`\`\n${exportString}\n\`\`\``,
+                flags: 64,
+            });
+        } else {
+            // Export is too large, send as file
+            const buffer = Buffer.from(exportString, 'utf-8');
+            const file = new AttachmentBuilder(buffer, { name: 'bans_export.txt' });
+
+            return interaction.reply({
+                content: `Exported bans${categoryFilter ? ` with category "${categoryFilter}"` : ''} as file (too large for inline message).`,
+                files: [file],
+                flags: 64,
+            });
+        }
+    }
+};
