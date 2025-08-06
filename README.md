@@ -84,6 +84,8 @@ Gatekeeper/
 This section provides guides on identifying specific types of users that may disrupt your community. Please remember that not everyone who exhibits these behaviors is necessarily part of these groups. Always exercise caution and avoid mislabeling users without proper context.
 - [**How To Identify Disboard Leachers**](https://github.com/Newfies/Gatekeeper/blob/main/hti/disboardleachers.md) — Learn how to spot users who join servers via discord server promoters such as Disboard solely to DM advertise or leach.
 
+---
+
 ## 📜 License
 MIT License — Free to use, modify, and contribute.
 
